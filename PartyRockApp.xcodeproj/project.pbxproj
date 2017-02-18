@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA18F5971E58480F003788F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18F5961E58480F003788F6 /* AppDelegate.swift */; };
-		CA18F5991E58480F003788F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18F5981E58480F003788F6 /* ViewController.swift */; };
+		CA18F5991E58480F003788F6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18F5981E58480F003788F6 /* MainVC.swift */; };
 		CA18F59C1E58480F003788F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA18F59A1E58480F003788F6 /* Main.storyboard */; };
 		CA18F59E1E58480F003788F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA18F59D1E58480F003788F6 /* Assets.xcassets */; };
 		CA18F5A11E58480F003788F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA18F59F1E58480F003788F6 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		CA18F5931E58480F003788F6 /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA18F5961E58480F003788F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA18F5981E58480F003788F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA18F5981E58480F003788F6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CA18F59B1E58480F003788F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA18F59D1E58480F003788F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA18F5A01E58480F003788F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +97,10 @@
 		CA18F5951E58480F003788F6 /* PartyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA18F5C61E584929003788F6 /* Model */,
+				CA18F5C51E584923003788F6 /* View */,
+				CA18F5C41E584913003788F6 /* Controller */,
 				CA18F5961E58480F003788F6 /* AppDelegate.swift */,
-				CA18F5981E58480F003788F6 /* ViewController.swift */,
 				CA18F59A1E58480F003788F6 /* Main.storyboard */,
 				CA18F59D1E58480F003788F6 /* Assets.xcassets */,
 				CA18F59F1E58480F003788F6 /* LaunchScreen.storyboard */,
@@ -123,6 +125,28 @@
 				CA18F5B81E58480F003788F6 /* Info.plist */,
 			);
 			path = PartyRockAppUITests;
+			sourceTree = "<group>";
+		};
+		CA18F5C41E584913003788F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA18F5981E58480F003788F6 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CA18F5C51E584923003788F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CA18F5C61E584929003788F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA18F5991E58480F003788F6 /* ViewController.swift in Sources */,
+				CA18F5991E58480F003788F6 /* MainVC.swift in Sources */,
 				CA18F5971E58480F003788F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
