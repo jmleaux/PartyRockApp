@@ -72,7 +72,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F8U-KG-oI5" id="AhT-Nu-S9u">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pas-2016_seal_0224_2_hires2_wide-b164a092cede1f2d0c11772120caeece9983e734-s900-c85" translatesAutoresizingMaskIntoConstraints="NO" id="Bl4-zl-jOs">
@@ -83,7 +83,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Killer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-JZ-pAf">
-                                                    <rect key="frame" x="181" y="23.666666666666671" width="53.333333333333343" height="22.333333333333329"/>
+                                                    <rect key="frame" x="181" y="23" width="54" height="23"/>
                                                     <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -148,14 +148,27 @@
                                     <constraint firstAttribute="height" constant="202" id="xAF-If-pvk"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-Kv-DaI">
+                                <rect key="frame" x="0.0" y="352" width="414" height="34"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.84913374352331605" green="0.84913374352331605" blue="0.84913374352331605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8K5-Kv-DaI" firstAttribute="centerX" secondItem="2S1-bw-n1i" secondAttribute="centerX" id="8LY-zz-LwC"/>
+                            <constraint firstItem="8K5-Kv-DaI" firstAttribute="width" secondItem="2S1-bw-n1i" secondAttribute="width" id="Js3-hm-dke"/>
+                            <constraint firstItem="8K5-Kv-DaI" firstAttribute="centerY" secondItem="2S1-bw-n1i" secondAttribute="centerY" id="fC8-eB-FKL"/>
                             <constraint firstAttribute="trailing" secondItem="58R-pv-ENz" secondAttribute="trailing" id="hUb-w5-m30"/>
                             <constraint firstItem="58R-pv-ENz" firstAttribute="top" secondItem="EZ5-v5-R26" secondAttribute="bottom" constant="8" id="nZG-6u-jFj"/>
                             <constraint firstItem="58R-pv-ENz" firstAttribute="leading" secondItem="2S1-bw-n1i" secondAttribute="leading" id="pEt-NP-Vhg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="8K5-Kv-DaI" id="WI7-X2-ttm"/>
+                        <outlet property="webView" destination="58R-pv-ENz" id="Ef7-Uz-Ofe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKW-vv-LJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
